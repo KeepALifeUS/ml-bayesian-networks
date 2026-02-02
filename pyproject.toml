@@ -1,8 +1,8 @@
 [project]
-name = "ctb3-ml-bayesian-networks"
+name = "ml-bayesian-networks"
 version = "1.0.0"
 description = "Bayesian Neural Networks for uncertainty-aware crypto trading"
-authors = [{name = "CTB3 Team", email = "team@ctb3.ai"}]
+authors = [{name = "ML Team", email = "team@example.com"}]
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
