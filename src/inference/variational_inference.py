@@ -27,7 +27,7 @@ class VIConfig:
     n_epochs: int = 100
     warmup_epochs: int = 10  # KL annealing warmup
     
-    # Context7 Enterprise patterns
+    # enterprise patterns
     early_stopping_patience: int = 10
     gradient_clip: float = 1.0
     lr_scheduler: str = 'cosine'  # 'cosine', 'step', 'exponential'

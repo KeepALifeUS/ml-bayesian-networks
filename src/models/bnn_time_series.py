@@ -34,7 +34,7 @@ class BNNTimeSeriesConfig:
     posterior_init_std: float = 0.1
     local_reparam: bool = True
     
-    # Context7 Enterprise patterns
+    # enterprise patterns
     enable_residual: bool = True
     enable_layer_norm: bool = True
     enable_multi_scale: bool = True  # Multi-scale temporal features

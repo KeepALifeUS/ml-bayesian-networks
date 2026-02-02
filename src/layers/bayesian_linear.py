@@ -27,7 +27,7 @@ class BayesianLinearConfig:
     bias: bool = True
     local_reparam: bool = True
     
-    # Context7 Enterprise patterns
+    # enterprise patterns
     enable_monitoring: bool = True
     cache_kl: bool = True
     numerical_stability_eps: float = 1e-8
@@ -70,7 +70,7 @@ class BayesianLinear(nn.Module):
         # KL divergence cache for efficiency
         self._kl_cache = None
         
-        # Monitoring metrics for Context7
+        # Monitoring metrics for 
         self.metrics = {
             'kl_divergence': [],
             'weight_uncertainty': [],
@@ -201,7 +201,7 @@ class BayesianLinear(nn.Module):
         return total_kl
     
     def _update_metrics(self, weight: torch.Tensor, output: torch.Tensor):
-        """Update monitoring metrics for Context7 observability"""
+        """Update monitoring metrics for observability"""
         with torch.no_grad():
             # Weight uncertainty (std)
             weight_std = torch.log1p(torch.exp(self.weight_rho)).mean().item()
